@@ -1,10 +1,10 @@
-package com.company;
+package com.company.semaphoreFoo;
 
 class FooThread implements Runnable {
     String name;
-    Foo foo;
+    SemFoo foo;
 
-    FooThread(Foo foo, String name) {
+    FooThread(SemFoo foo, String name) {
         this.foo = foo;
         this.name = name;
     }
