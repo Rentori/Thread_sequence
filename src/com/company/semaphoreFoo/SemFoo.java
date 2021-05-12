@@ -1,8 +1,8 @@
-package com.company;
+package com.company.semaphoreFoo;
 
 import java.util.concurrent.Semaphore;
 
-public class Foo {
+public class SemFoo {
     Semaphore semaphoreA = new Semaphore(1);
     Semaphore semaphoreB = new Semaphore(0);
     Semaphore semaphoreC = new Semaphore(0);
@@ -37,7 +37,7 @@ public class Foo {
     }
 
     public static void main(String[] args) {
-        Foo foo = new Foo();
+        SemFoo foo = new SemFoo();
         new Thread(new FooThread(foo, "C")).start();
         new Thread(new FooThread(foo, "B")).start();
         new Thread(new FooThread(foo, "A")).start();
