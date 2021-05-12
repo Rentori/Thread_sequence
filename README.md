@@ -17,3 +17,8 @@ public class Foo {
 
 Foo - main класс, реализующий Semaphore в качестве синхронизатора.
 FooThread - класс потоковой реализации.
+
+cbFoo - синхронизация с помощью CycleBarrier.
+cblFoo - синхронизация с помощью CountDownLatch.
+phaserFoo - синхронизация с помощью Phaser.
+semaphoreFoo - синхронизация с помощью Semaphore.
